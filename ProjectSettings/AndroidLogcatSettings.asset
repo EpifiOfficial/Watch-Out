@@ -1,0 +1,161 @@
+{
+    "m_SelectedDeviceId": "0416049b63dc3b02",
+    "m_SelectedPackage": {
+        "deviceId": "0416049b63dc3b02",
+        "name": "com.DefaultCompany.com.unity.template.mobile2D",
+        "processId": 25137,
+        "exited": false
+    },
+    "m_SelectedPriority": 0,
+    "m_KnownPackagesForSerialization": [
+        {
+            "deviceId": "0416049b63dc3b02",
+            "name": "com.DefaultCompany.com.unity.template.mobile2D",
+            "processId": 10854,
+            "exited": true
+        },
+        {
+            "deviceId": "0416049b63dc3b02",
+            "name": "com.google.android.youtube",
+            "processId": 2715,
+            "exited": false
+        },
+        {
+            "deviceId": "0416049b63dc3b02",
+            "name": "com.DefaultCompany.com.unity.template.mobile2D",
+            "processId": 18438,
+            "exited": false
+        },
+        {
+            "deviceId": "0416049b63dc3b02",
+            "name": "com.DefaultCompany.com.unity.template.mobile2D",
+            "processId": 32066,
+            "exited": false
+        },
+        {
+            "deviceId": "0416049b63dc3b02",
+            "name": "com.DefaultCompany.com.unity.template.mobile2D",
+            "processId": 1434,
+            "exited": false
+        },
+        {
+            "deviceId": "0416049b63dc3b02",
+            "name": "com.DefaultCompany.com.unity.template.mobile2D",
+            "processId": 2831,
+            "exited": false
+        },
+        {
+            "deviceId": "0416049b63dc3b02",
+            "name": "com.DefaultCompany.com.unity.template.mobile2D",
+            "processId": 4860,
+            "exited": false
+        },
+        {
+            "deviceId": "0416049b63dc3b02",
+            "name": "com.DefaultCompany.com.unity.template.mobile2D",
+            "processId": 6687,
+            "exited": false
+        },
+        {
+            "deviceId": "0416049b63dc3b02",
+            "name": "com.DefaultCompany.com.unity.template.mobile2D",
+            "processId": 26931,
+            "exited": false
+        },
+        {
+            "deviceId": "0416049b63dc3b02",
+            "name": "com.DefaultCompany.com.unity.template.mobile2D",
+            "processId": 29671,
+            "exited": false
+        },
+        {
+            "deviceId": "0416049b63dc3b02",
+            "name": "com.DefaultCompany.com.unity.template.mobile2D",
+            "processId": 9096,
+            "exited": false
+        },
+        {
+            "deviceId": "0416049b63dc3b02",
+            "name": "com.DefaultCompany.com.unity.template.mobile2D",
+            "processId": 13046,
+            "exited": false
+        },
+        {
+            "deviceId": "0416049b63dc3b02",
+            "name": "com.DefaultCompany.com.unity.template.mobile2D",
+            "processId": 26016,
+            "exited": false
+        },
+        {
+            "deviceId": "0416049b63dc3b02",
+            "name": "com.DefaultCompany.com.unity.template.mobile2D",
+            "processId": 20359,
+            "exited": false
+        },
+        {
+            "deviceId": "0416049b63dc3b02",
+            "name": "com.DefaultCompany.com.unity.template.mobile2D",
+            "processId": 23453,
+            "exited": false
+        },
+        {
+            "deviceId": "0416049b63dc3b02",
+            "name": "com.DefaultCompany.com.unity.template.mobile2D",
+            "processId": 25137,
+            "exited": false
+        }
+    ],
+    "m_Tags": {
+        "m_Entries": [
+            {
+                "m_Name": "Filter by all listed tags",
+                "m_Selected": false
+            },
+            {
+                "m_Name": "No Filter",
+                "m_Selected": true
+            },
+            {
+                "m_Name": "",
+                "m_Selected": false
+            },
+            {
+                "m_Name": "Tag Control...",
+                "m_Selected": false
+            },
+            {
+                "m_Name": "",
+                "m_Selected": false
+            },
+            {
+                "m_Name": "Unity",
+                "m_Selected": false
+            },
+            {
+                "m_Name": "CRASH",
+                "m_Selected": false
+            }
+        ]
+    },
+    "m_MemoryViewerState": {
+        "MemoryWindowHeight": 300.0,
+        "MemoryWindowWidth": 170.0,
+        "MemoryTypeEnabled": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+        ],
+        "MemoryGroup": 1,
+        "Behavior": 1
+    },
+    "m_Filter": "",
+    "m_FilterIsRegularExpression": false,
+    "m_SymbolPaths": []
+}
