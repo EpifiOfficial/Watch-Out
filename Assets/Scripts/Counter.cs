@@ -6,7 +6,6 @@ using TMPro;
 
 public class Counter : MonoBehaviour
 {  //Countdown timer variables
-    public float currentTimeProgressBar = 0f;
     public float currentTimeText = 0f;
     public float startingTimeProgressBar = 0f;
         public float TimeForWait;
