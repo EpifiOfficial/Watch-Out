@@ -12,7 +12,11 @@ using UnityEngine;
 
 public class DragDrop : MonoBehaviour {
 
-
+    public GameObject ExplosionPrefab;
+    public GameObject StarPrefab;
+    public GameObject SpiralPos;
+    public bool isPrefabActive;
+    private Spawner spawner;
 
 
 
@@ -43,7 +47,15 @@ public class DragDrop : MonoBehaviour {
     // Use this for initialization
 
     void Start () {
+        
+         spawner = GameObject.FindObjectOfType<Spawner>();
 
+
+
+
+
+        SpiralPos= GameObject.Find("Spiral");
+        isPrefabActive=true;
 
 
 
@@ -223,5 +235,25 @@ public class DragDrop : MonoBehaviour {
         }
 
     }
+
+
+void OnCollisionEnter2D(Collision2D collision)
+{
+    if (collision.gameObject.tag == "Enemy")
+    {
+        isPrefabActive=false;
+        spawner.SpawnObject();
+        Destroy(gameObject);
+        Instantiate(ExplosionPrefab,transform.position,Quaternion.identity);
+
+    }else if (collision.gameObject.tag == "Spiral"){
+        isPrefabActive=false;
+        spawner.SpawnObject();
+
+        Destroy(gameObject);
+        Instantiate(StarPrefab,SpiralPos.transform.position,Quaternion.identity);
+    }
+}
+
 
 }

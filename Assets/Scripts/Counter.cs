@@ -11,6 +11,8 @@ public class Counter : MonoBehaviour
         public float TimeForWait;
             public TextMeshProUGUI TimeText;
     public int min;
+    public GameObject UiGameEnded;
+   
 
 
     // Start is called before the first frame update
@@ -25,7 +27,7 @@ public class Counter : MonoBehaviour
     {
         if(currentTimeText<=min)
         {
-         
+         UiGameEnded.SetActive(true);
    
         }else
         {
@@ -33,4 +35,5 @@ public class Counter : MonoBehaviour
         }
         TimeText.text = currentTimeText.ToString("00:00");
     }
+    
 }

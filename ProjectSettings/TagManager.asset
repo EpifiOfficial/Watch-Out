@@ -5,6 +5,8 @@ TagManager:
   serializedVersion: 2
   tags:
   - FruitPrefab
+  - Enemy
+  - Spiral
   layers:
   - Default
   - TransparentFX
