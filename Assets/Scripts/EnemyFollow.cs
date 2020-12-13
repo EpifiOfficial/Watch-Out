@@ -11,13 +11,14 @@ public class EnemyFollow : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        target = GameObject.FindGameObjectWithTag("FruitPrefab").GetComponent<Transform>();
 
     }
 
     // Update is called once per frame
     void Update()
     {
+                target = GameObject.FindGameObjectWithTag("FruitPrefab").GetComponent<Transform>();
+
         if(Vector2.Distance(transform.position,target.position)>stopDistance){
             transform.position = Vector2.MoveTowards(transform.position,target.position,speed*Time.deltaTime);
 
