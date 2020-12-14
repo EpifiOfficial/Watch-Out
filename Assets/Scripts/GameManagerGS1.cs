@@ -12,11 +12,15 @@ public class GameManagerGS1 : MonoBehaviour
     public TextMeshProUGUI ScoreText;
     public TextMeshProUGUI FinalUiScoreText;
     public GameObject FinalUi;
-    public int transitionTime;
+    public Animator transition;
+    public float transitionTime = 0f;
+
     int Score;
 
     void Start()
     {
+            Time.timeScale = 1;
+
      Score=0;   
     }
 
@@ -40,10 +44,12 @@ public class GameManagerGS1 : MonoBehaviour
     }
 
     public void Quit(){
-        SceneManager.LoadScene("HomeScene");
+        LoadPreviousLevel();
     }
     public void Restart(){
-                SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 0);
+        Time.timeScale = 1;
+
+        LoadCurrentLevel();  
     }
     public void IncreaseScore(int incrementScore){
         Score = Score+incrementScore;
@@ -52,13 +58,21 @@ public class GameManagerGS1 : MonoBehaviour
     public void finalUi(){
         FinalUi.SetActive(true);
         FinalUiScoreText.text = Score.ToString();
-        Time.timeScale = 0;
+        Time.timeScale = 0.1f;
 
     }
+
     void LoadPreviousLevel(){
-        StartCoroutine(loadLevel(SceneManager.GetActiveScene().buildIndex-1));
+                Time.timeScale = 1;
+
+        StartCoroutine(loadLevel(SceneManager.GetActiveScene().buildIndex - 1));
     }
-    IEnumerator loadScene(int levelIndex){
+    void LoadCurrentLevel(){
+                Time.timeScale = 1;
+
+        StartCoroutine(loadLevel(SceneManager.GetActiveScene().buildIndex + 0 ));
+    }
+    IEnumerator loadLevel(int levelIndex){
         transition.SetTrigger("Start");
         yield return new WaitForSeconds(transitionTime);
         SceneManager.LoadScene(levelIndex);

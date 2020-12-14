@@ -7,7 +7,7 @@ public class GameManagerHomeScene : MonoBehaviour
 {
     public GameObject tapPrefab;
     public Animator transition;
-    public float transitionTime = 2.3f;
+    public float transitionTime = 0f;
 
 
     // Start is called before the first frame update

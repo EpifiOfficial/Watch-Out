@@ -12,12 +12,14 @@ public class Counter : MonoBehaviour
             public TextMeshProUGUI TimeText;
     public int min;
     public GameObject UiGameEnded;
+    private GameManagerGS1 gameManagerGS1;
    
 
 
     // Start is called before the first frame update
     void Start()
     {
+        gameManagerGS1 = GameObject.FindObjectOfType<GameManagerGS1>();
           currentTimeText = TimeForWait;
 
     }
@@ -27,8 +29,7 @@ public class Counter : MonoBehaviour
     {
         if(currentTimeText<=min)
         {
-         UiGameEnded.SetActive(true);
-   
+            gameManagerGS1.finalUi();
         }else
         {
          currentTimeText -=  1* Time.deltaTime;

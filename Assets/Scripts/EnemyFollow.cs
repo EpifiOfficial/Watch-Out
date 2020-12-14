@@ -7,13 +7,13 @@ public class EnemyFollow : MonoBehaviour
     public float speed;
     public float stopDistance;
     private Transform target;
-    bool isLoadingVisible;
+    public bool isLoadingVisible;
 
     // Start is called before the first frame update
     void Start()
     {
         isLoadingVisible=true;
-        enemyFollow();
+        StartCoroutine(enemyFollow());
     }
 
     // Update is called once per frame
@@ -32,7 +32,7 @@ public class EnemyFollow : MonoBehaviour
     IEnumerator enemyFollow(){
 
             yield return new WaitForSeconds(2.3f);
-        isLoadingVisible=false;
+            isLoadingVisible=false;
     
     }
 }
