@@ -121,6 +121,7 @@ MonoBehaviour:
   ExplosionPrefab: {fileID: 5196916734463632657, guid: b079c785cda8d4708b76d52811ff5148, type: 3}
   StarPrefab: {fileID: 7993573569105894373, guid: d579e11b530884818b52cc9843e334ce, type: 3}
   SpiralPos: {fileID: 0}
+  isPrefabActive: 0
 --- !u!58 &4556629891151082530
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -134,6 +135,6 @@ CircleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0, y: 0.07098302}
   serializedVersion: 2
-  m_Radius: 0.975
+  m_Radius: 1.3501959

@@ -17,6 +17,7 @@ public class DragDrop : MonoBehaviour {
     public GameObject SpiralPos;
     public bool isPrefabActive;
     private Spawner spawner;
+    private GameManagerGS1 gameManagerGS1;
 
 
 
@@ -49,7 +50,8 @@ public class DragDrop : MonoBehaviour {
     void Start () {
         
          spawner = GameObject.FindObjectOfType<Spawner>();
-
+         gameManagerGS1 = GameObject.FindObjectOfType<GameManagerGS1>();
+        
 
 
 
@@ -249,9 +251,9 @@ void OnCollisionEnter2D(Collision2D collision)
     }else if (collision.gameObject.tag == "Spiral"){
         isPrefabActive=false;
         spawner.SpawnObject();
-
         Destroy(gameObject);
         Instantiate(StarPrefab,SpiralPos.transform.position,Quaternion.identity);
+
     }
 }
 
